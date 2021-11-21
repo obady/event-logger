@@ -23,3 +23,8 @@ func (app *application) home(w http.ResponseWriter, r *http.Request) {
     }
     app.infoLog.Printf(string(body))
 }
+
+func (app *application) health(w http.ResponseWriter, r *http.Request) {
+
+    w.Write([]byte("if you can see this then everything is ok"))
+}

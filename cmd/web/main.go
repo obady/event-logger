@@ -24,9 +24,6 @@ func main() {
         infoLog:  infoLog,
     }
 
-    mux := http.NewServeMux()
-    mux.HandleFunc("/", app.home)
-
     srv := &http.Server{
         Addr:     *addr,
         ErrorLog: errorLog,
