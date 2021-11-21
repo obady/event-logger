@@ -30,7 +30,7 @@ jobs:
           # Name of the Docker image
           image: http-event-logger
           # Target Docker registry
-          registry: mobadeyi
+          registry: registry.hub.docker.com
           # Docker registry username
           username: mobadeyi
           # Docker registry password
